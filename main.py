@@ -60,4 +60,24 @@ def blackjack(a, b, c):
         return 'Bust'
 
 
-print(blackjack(12, 9, 11))
+def summer_69(arr):
+    sum = 0
+    add = True
+    for x in arr:
+        while add:
+            if x != 6:
+                sum += x
+                break
+            else:
+                add = False
+        while not add:
+            if x == 9:
+                break
+            else:
+                add = False
+                break
+    return sum
+
+
+
+print(summer_69([4, 5, 6, 7, 8, 9]))
