@@ -44,13 +44,20 @@ class Account:
     def __init__(self, name, balance = 1):
         self.name = name
         self.money = balance
-    def owner(self):
-        name = self.name
-        return name 
-    def balance(self):
-        balance = self.money
-        return balance 
+    def withdraw(self, amount = 0):
+        if amount > self.money:
+            return print('Not enought balance')
+        else:
+            self.money -= amount
+            return print('wtihdrawal accepted')
+    def deposit(self, deposit_amount = 0):
+        self.money += deposit_amount
+        return print('deposit accepted')
+    def __str__(self) -> str:
+        return f'The account belongs to:{self.name} and remaining balance is {self.money}'
 
 acct1 = Account('Jose',100)
-print(acct1.owner)
-
+print (acct1.deposit(20))
+print(acct1)
+acct1.withdraw(100)
+print(acct1)
