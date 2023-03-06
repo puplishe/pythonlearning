@@ -2,6 +2,7 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings
+__name__ = 'main'
 def first_func(num1, num2):
     if num1 % 2 == 0 and num2 % 2 == 0:
         return min(num1, num2)
