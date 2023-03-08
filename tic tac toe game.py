@@ -1,3 +1,4 @@
+__name__ = 'tic_tac_toe_game'
 import math
 from IPython.core.display_functions import clear_output
 

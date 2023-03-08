@@ -82,3 +82,19 @@ def summer_69(arr):
 
 
 print(summer_69([4, 5, 6, 7, 8, 9]))
+new_deck.shuffle()
+if len(player_one.cards) != 2:
+    player_one.add_card(new_deck.draw())
+    player_one.add_card(new_deck.draw())
+if len(player_two.cards) != 2:
+    player_two.add_card(new_deck.draw())
+    player_two.add_card(new_deck.draw())
+player_one_cards = []
+player_two_cards = []
+
+if len(player_one_cards) < 2:
+    player_one_cards.append(player_one.remove())
+    player_one_cards.append(player_one.remove())
+if len(player_two_cards) < 2:
+    player_two_cards.append(player_two.remove())
+    player_two_cards.append(player_two.remove())

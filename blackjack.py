@@ -66,7 +66,7 @@ class Value_Check:
          return self.list
     def __str__(self) -> str:
         return f'Your score is: {self.total_value}'
-
+#grrr
 exit
 import pdb
 new_deck = Deck()
@@ -172,3 +172,4 @@ while game_on:
     if user_choice_another_round == 'N':
         game_on = False
         break
+print('gg')

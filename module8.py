@@ -1,3 +1,4 @@
+__name__ = 'module 8'
 class Line:
     def __init__(self,coor1,coor2):
         self.coor1 = coor1
